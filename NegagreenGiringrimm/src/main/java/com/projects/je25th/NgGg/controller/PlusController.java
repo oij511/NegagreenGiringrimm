@@ -1,4 +1,4 @@
-package com.projects.je25th.NegagreenGiringrimm.controller;
+package com.projects.je25th.NgGg.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class PlusController {
 
-	@GetMapping(path = "/plusform")
+	@GetMapping(path = "/plusform")//get 방식
 	public String plusform() {
 		return "plusForm";
 	}
 
-	@PostMapping(path = "/plus")
+	@PostMapping(path = "/plus")//post 방식
 	public String plus(
 			@RequestParam(name = "value1", required = true) int value1,
 			@RequestParam(name = "value2", required = true) int value2, ModelMap modelMap

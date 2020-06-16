@@ -1,4 +1,4 @@
-package com.projects.je25th.NegagreenGiringrimm.config;
+package com.projects.je25th.NgGg.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.projects.je25th.NegagreenGiringrimm.controller" })//베이스 패키지에서 찾을것
+@ComponentScan(basePackages = { "com.projects.je25th.NgGg.controller" })//베이스 패키지에서 찾을것
 public class WebMvcContextConfiguration extends WebMvcConfigurerAdapter {
 
 	@Override
